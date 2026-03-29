@@ -189,7 +189,7 @@ export default function MemoResult({ result, loading, error }) {
               const pri = item.priority || item.uu_tien;
               return (
                 <li key={i} className="flex items-start gap-3 text-sm">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 text-blue-800 font-bold flex items-center justify-center text-xs">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 text-primary-700 font-bold flex items-center justify-center text-xs">
                     {i + 1}
                   </span>
                   <div className="flex-1">

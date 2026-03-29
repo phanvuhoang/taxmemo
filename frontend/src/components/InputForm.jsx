@@ -39,7 +39,7 @@ export default function InputForm({ onAnalyze, loading }) {
       <div className="mb-6">
         <div className="flex items-center gap-2 mb-1">
           <span className="text-2xl">🏛️</span>
-          <h1 className="text-2xl font-bold text-blue-800">TaxMemo</h1>
+          <h1 className="text-2xl font-bold text-primary-700">TaxMemo</h1>
         </div>
         <p className="text-slate-500 text-sm">AI Tax Advisory for Vietnam</p>
       </div>
@@ -56,7 +56,7 @@ export default function InputForm({ onAnalyze, loading }) {
             onChange={e => setTinhHuong(e.target.value)}
             onBlur={() => setTouched(true)}
             placeholder="Công ty FDI sản xuất tại Hà Nội trả phí dịch vụ quản lý cho công ty mẹ tại Singapore..."
-            className={`w-full rounded-lg border px-3 py-2 text-sm text-slate-700 placeholder-slate-400 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition ${
+            className={`w-full rounded-lg border px-3 py-2 text-sm text-slate-700 placeholder-slate-400 resize-none focus:outline-none focus:ring-2 focus:ring-primary-500 transition ${
               showError ? 'border-red-400 bg-red-50' : 'border-slate-300 bg-white'
             }`}
           />
@@ -79,7 +79,7 @@ export default function InputForm({ onAnalyze, loading }) {
             <select
               value={loaiHinhDn}
               onChange={e => setLoaiHinhDn(e.target.value)}
-              className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-500"
             >
               {LOAI_HINH_OPTIONS.map(opt => (
                 <option key={opt.value} value={opt.value}>{opt.label}</option>
@@ -93,7 +93,7 @@ export default function InputForm({ onAnalyze, loading }) {
               value={nganhNghe}
               onChange={e => setNganhNghe(e.target.value)}
               placeholder="Sản xuất, Thương mại..."
-              className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
             />
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function InputForm({ onAnalyze, loading }) {
         <button
           type="submit"
           disabled={loading}
-          className="mt-auto w-full flex items-center justify-center gap-2 bg-blue-800 hover:bg-blue-900 disabled:bg-blue-300 text-white font-semibold rounded-lg px-4 py-3 text-sm transition"
+          className="mt-auto w-full flex items-center justify-center gap-2 bg-primary-700 hover:bg-primary-600 disabled:bg-primary-200 text-white font-semibold rounded-lg px-4 py-3 text-sm transition"
         >
           {loading ? (
             <>

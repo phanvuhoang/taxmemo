@@ -19,7 +19,7 @@ export default function ExportButton({ targetId }) {
   return (
     <button
       onClick={handleExport}
-      className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-800 hover:bg-blue-900 text-white text-xs font-medium rounded-lg transition no-print"
+      className="flex items-center gap-1.5 px-3 py-1.5 bg-primary-700 hover:bg-primary-600 text-white text-xs font-medium rounded-lg transition no-print"
     >
       📄 Export PDF
     </button>
